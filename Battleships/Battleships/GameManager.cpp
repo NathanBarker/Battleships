@@ -5,10 +5,6 @@
 
 GameManager::GameManager()
 {
-    // Generate Players
-    Player* player = nullptr;
-    AI* computer = nullptr;
-
     // Generate Grid
     Grid* playerSide = nullptr;
     Grid* computerSide = nullptr;
@@ -16,4 +12,9 @@ GameManager::GameManager()
     // Order grid and contain
     Grids->emplace_back(playerSide);
     Grids->emplace_back(computerSide);
+}
+
+void GameManager::SetupBoard()
+{
+    
 }

@@ -3,8 +3,6 @@
 #include <map>
 #include <string>
 
-extern bool GIsRequestingExit;
-
 struct PreInitErrorContext
 {
     std::map<int, std::string> GErrorContextMap =
@@ -27,10 +25,17 @@ class BattleshipsLaunchModule
 public:
     BattleshipsLaunchModule();
 
-    static bool RequestedExit()
+    bool GetRequestedExit()
     {
         return GIsRequestingExit;
     }
-    
-    void CleanUp();
+
+    void SetRequestedExit(bool hasRequestedExit)
+    {
+        GIsRequestingExit = hasRequestedExit;
+    }
+
+    static void CleanUp();
+private:
+    bool GIsRequestingExit;
 };

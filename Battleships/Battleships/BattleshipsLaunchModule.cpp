@@ -3,6 +3,7 @@
 BattleshipsLaunchModule::BattleshipsLaunchModule()
 {
     PreInitErrorContext FPreInitErrorContext;
+    GIsRequestingExit = false;
 }
 
 void BattleshipsLaunchModule::CleanUp()
