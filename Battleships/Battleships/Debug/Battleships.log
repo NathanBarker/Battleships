@@ -1,0 +1,9 @@
+﻿  AI.cpp
+  Battleships.cpp
+  BattleshipsLaunchModule.cpp
+  GameManager.cpp
+  Grid.cpp
+  IPlayable.cpp
+  Player.cpp
+  Generating Code...
+  Battleships.vcxproj -> C:\WorkStuff\Battleships\Battleships\Debug\Battleships.exe
