@@ -157,6 +157,7 @@
     <ClCompile Include="AI.cpp" />
     <ClCompile Include="Battleships.cpp" />
     <ClCompile Include="BattleshipsLaunchModule.cpp" />
+    <ClCompile Include="Cell.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="Grid.cpp" />
     <ClCompile Include="IPlayable.cpp" />
@@ -164,7 +165,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI.h" />
+    <ClInclude Include="BattleshipDefinitions.h" />
     <ClInclude Include="BattleshipsLaunchModule.h" />
+    <ClInclude Include="Cell.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="Grid.h" />
     <ClInclude Include="IPlayable.h" />

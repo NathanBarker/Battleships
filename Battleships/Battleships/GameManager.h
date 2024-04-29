@@ -1,11 +1,10 @@
 ﻿#pragma once
 
+#include "Grid.h"
 #include <vector>
 
-#include "Grid.h"
-
 class Player;
-class AI; 
+class AI;
 
 class GameManager
 {
@@ -16,8 +15,8 @@ public:
     AI* computer = nullptr;
 
     // Game Manager Functions 
-
     void SetupBoard();
+    
 private:
     std::vector<Grid*>* Grids = nullptr;
 };

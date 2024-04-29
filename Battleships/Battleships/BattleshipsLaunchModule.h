@@ -25,7 +25,7 @@ class BattleshipsLaunchModule
 public:
     BattleshipsLaunchModule();
 
-    bool GetRequestedExit()
+    bool GetRequestedExit() const
     {
         return GIsRequestingExit;
     }
