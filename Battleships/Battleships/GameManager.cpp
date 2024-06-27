@@ -2,6 +2,7 @@
 
 #include <iostream>
 
+
 #include "AI.h"
 #include "Player.h"
 
@@ -29,5 +30,5 @@ GameManager::GameManager()
 
 void GameManager::SetupBoard()
 {
-    
+    // Grids are created in the constructor, need to populate every cell with the empty char. 
 }

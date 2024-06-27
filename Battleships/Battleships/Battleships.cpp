@@ -1,5 +1,3 @@
-#pragma once
-
 #include "BattleshipsLaunchModule.h"
 #include "GameManager.h"
 
