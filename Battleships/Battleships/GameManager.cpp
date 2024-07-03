@@ -18,10 +18,10 @@ void GameManager::SetupBoard() const
 {
     // Grids are created in the constructor, need to populate every cell with the empty char.
 
-    // Create new grid matricies
+    // Create new grid matrices
     for (Grid* BattleshipGrid : Grids)
     {
-        BattleshipGrid->GridMatrix = new std::vector<Cell*>();
+        BattleshipGrid->SetGridMatrix(new std::vector<Cell*>);
     }
     
     for (int row = 0; row < RowsToGenerate; row++)
@@ -30,8 +30,8 @@ void GameManager::SetupBoard() const
         {
             Cell* EmptyCell = new Cell(EmptySpace, row, column);
             
-            Grids[playerIndex]->GridMatrix->emplace_back(EmptyCell);
-            Grids[computerIndex]->GridMatrix->emplace_back(EmptyCell);
+            Grids[playerIndex]->GetGridMatrix().emplace_back(EmptyCell);
+            Grids[computerIndex]->GetGridMatrix().emplace_back(EmptyCell);
         }
     }
 }
