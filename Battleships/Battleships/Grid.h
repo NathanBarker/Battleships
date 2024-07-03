@@ -8,20 +8,10 @@ class Grid
 public:
     Grid();
 
-    std::vector<Cell*>* GetGridCells() const
+    std::vector<Cell*>* GridMatrix = nullptr;
+
+    void ChangeCellByIndex(const int Row, const int Column, const char NewCellChar) const
     {
-        return Cells;
+        GridMatrix[Row][Column]->SetCellChar(NewCellChar);
     }
-
-    void ChangeCellByIndex(const int Index, const char NewCellChar) const
-    {
-        std::vector<Cell*>& CellsVectorReference = *Cells;
-        Cell* IndexedCell = CellsVectorReference[Index];
-        IndexedCell->SetCellChar(NewCellChar);
-    }
-
-private:
-
-    // Need to rebuild that a grid contains 10 rows and 10 columns
-    std::vector<Cell*>* Cells = {};
 };

@@ -15,8 +15,8 @@ public:
     AI* computer = nullptr;
 
     // Game Manager Functions 
-    void SetupBoard();
+    void SetupBoard() const;
     
 private:
-    std::vector<Grid*>* Grids = nullptr;
+    std::vector<Grid*> Grids = {};
 };

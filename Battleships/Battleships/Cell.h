@@ -6,7 +6,7 @@ class Cell
 {
 public:
 
-    Cell(char DefaultedCellChar);
+    Cell(char DefaultedCellChar, int InitRowIndex, int InitColumnIndex);
 
     char GetCellChar() const
     {
@@ -18,6 +18,9 @@ public:
         CellChar = NewChar;
     }
 
+    int RowIndex = -1;
+    int ColumnIndex = -1;
+    
 private:
     char CellChar = 0;
 };
