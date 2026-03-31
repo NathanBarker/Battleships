@@ -3,27 +3,29 @@
 #include <vector>
 #include "Cell.h"
 
+#define  CellList std::vector<Cell*>
+
 class Grid
 {
 public:
-    Grid() = default;
 
-
-    std::vector<Cell*>& GetGridMatrix() const
+    Grid();
+    
+    std::vector<Cell*>& GetGridMatrix()
     {
-        return *GridMatrix;
+        return GridMatrix;
     }
 
-    void SetGridMatrix(std::vector<Cell*>* NewGridMatrix)
+    void SetGridMatrix(const std::vector<Cell*>& NewGridMatrix)
     {
         GridMatrix = NewGridMatrix;
     }
 
     void ChangeCellByIndex(const int Row, const int Column, const char NewCellChar) const
     {
-        GridMatrix[Row][Column]->SetCellChar(NewCellChar);
+        GridMatrix[Row][Column].SetCellChar(NewCellChar);
     }
 
 private:
-    std::vector<Cell*>* GridMatrix = nullptr;
+    CellList GridMatrix = {};
 };

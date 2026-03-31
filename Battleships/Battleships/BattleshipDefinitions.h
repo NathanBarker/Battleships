@@ -6,8 +6,8 @@ constexpr char MissHit = '*';
 constexpr char EmptySpace = ' ';
 constexpr char Invalid = '/';
 
-constexpr int RowsToGenerate = 10;
-constexpr int ColumnsToGenerate = 10;
+constexpr int RowsToGenerate = 9;
+constexpr int ColumnsToGenerate = 9;
 
 constexpr int playerIndex = 0;
 constexpr int computerIndex = 1;

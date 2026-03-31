@@ -6,21 +6,42 @@ class Cell
 {
 public:
 
-    Cell(char DefaultedCellChar, int InitRowIndex, int InitColumnIndex);
+    Cell(char defaultedCellChar, int initRowIndex, int initColumnIndex);
 
+    // Getters
     char GetCellChar() const
     {
         return CellChar;
     }
 
-    void SetCellChar(const char NewChar)
+    int GetRowIndex() const
     {
-        CellChar = NewChar;
+        return RowIndex;
     }
 
-    int RowIndex = -1;
-    int ColumnIndex = -1;
-    
+    int GetColumnIndex() const
+    {
+        return ColumnIndex;
+    }
+
+    // Setters
+    void SetCellChar(const char newChar)
+    {
+        CellChar = newChar;
+    }
+
+    void SetRowIndex(const int newRowIndex)
+    {
+        RowIndex = newRowIndex;
+    }
+
+    void SetColumnIndex(const int newColumnIndex)
+    {
+        ColumnIndex = newColumnIndex;
+    }
+
 private:
     char CellChar = 0;
+    int RowIndex = -1;
+    int ColumnIndex = -1;
 };

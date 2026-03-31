@@ -37,5 +37,5 @@ public:
 
     static void CleanUp();
 private:
-    bool GIsRequestingExit;
+    bool GIsRequestingExit = false;
 };

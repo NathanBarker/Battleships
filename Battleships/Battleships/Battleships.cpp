@@ -1,17 +1,21 @@
+#include <iostream>
+
 #include "BattleshipsLaunchModule.h"
 #include "GameManager.h"
 
 int main()
 {
     BattleshipsLaunchModule GLaunchModule = BattleshipsLaunchModule();
-    GLaunchModule.SetRequestedExit(false);
     GameManager gameManager = GameManager();
+
+    gameManager.SetupBoard();
 
     while (!GLaunchModule.GetRequestedExit())
     {
-        // Start Game!
-
-        // Setup Board
+        // Player Input Process
+        // Calculate AI Next decision
+        // Process Game
+        // Draw Board
     }
 
     return 0;
